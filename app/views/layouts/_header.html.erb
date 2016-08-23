@@ -19,8 +19,19 @@
           <% end %>
         </li>
         <% if !logged_in? %>
-        <li><%= link_to t("header.signup"), signup_path %></li>
-        <li><a id="show-form-login"><%= t "header.signin"  %> </a>
+        <li>
+          <%= link_to signup_path do %>
+            <span class="glyphicon glyphicon-cloud-upload">
+              <%= t "header.signup" %>
+            </span>
+          <% end %>
+        </li>
+        <li>
+          <a id="show-form-login">
+            <span class="glyphicon glyphicon-log-in">
+              <%= t "header.signin" %>
+            </span>
+          </a>
           <div class="col-lg-12" id="form-login">
             <div class="col-lg-12">
               <h6 class="color-red" id="message-err"></h6>

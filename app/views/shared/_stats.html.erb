@@ -1,10 +1,16 @@
 <div class="stats">
-  <strong id="following" class="stats">
-    <%= link_to pluralize(@user.following.count, t("follow.following")),
-      relationship_path(@user, message:"following")%>
-  </strong>
-  <strong id="followers" class="stats">
-    <%= link_to pluralize(@user.followers.count, t("follow.followers")),
-      relationship_path(@user, message:"followers")%>
-  </strong>
+ <div class="col-lg-12 padding-zero ">
+    <div class="col-lg-6">
+      <strong id="following" class="stats">
+        <%= link_to pluralize(@user.following.count, t("follow.following")),
+        relationship_path(@user, message:"following")%>
+      </strong>
+    </div>
+    <div class="col-lg-6">
+      <strong id="followers" class="stats">
+        <%= link_to pluralize(@user.followers.count, t("follow.followers")),
+        relationship_path(@user, message:"followers")%>
+      </strong>
+    </div>
+  </div>
 </div>
