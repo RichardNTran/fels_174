@@ -18,7 +18,9 @@ body {
   width: 100%;
   height: 100%;
 }
-
+.color-text {
+  color : $color;
+}
 .wrapper {
   position: relative;
   min-height: 100%;
@@ -31,6 +33,10 @@ h1, h3 {
 h6 {
   display: inline;
   color: $color;
+}
+.home-title {
+  color: #F44336;
+  font-weight: bold;
 }
 .color-red {
   color: red;

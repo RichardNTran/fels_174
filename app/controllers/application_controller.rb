@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   private
   def login_user
     unless logged_in?
-      flash[:danger] = t "not_login"
+      flash[:danger] = t "update_profile.not_login"
       redirect_to root_url
     end
   end

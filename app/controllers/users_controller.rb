@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   def show
     if @user.nil?
       flash[:danger] = I18n.t "not_success"
-      redirect_to root
+      redirect_to root_url
     end
   end
 
